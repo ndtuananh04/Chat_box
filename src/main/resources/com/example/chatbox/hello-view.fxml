@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatbox.HelloController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="480.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="57.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="E:\chatBox\James.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="16.0" style="-fx-cursor: hand;" text="James">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="40.0" text="Đang hoạt động" />
+            <Button fx:id="call" layoutX="305.0" layoutY="19.0" mnemonicParsing="false" onAction="#loi" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: rgba(0,0,0,0); -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="E:\chatBox\phone-call.png" />
+                     </image></ImageView>
+               </graphic></Button>
+            <Button fx:id="vidcall" layoutX="369.0" layoutY="19.0" mnemonicParsing="false" onAction="#loi" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: rgba(0,0,0,0); -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="E:\chatBox\video.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="miscell" layoutX="421.0" layoutY="19.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: rgba(0,0,0,0); -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="E:\chatBox\dots.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tf" layoutX="14.0" layoutY="601.0" prefHeight="26.0" prefWidth="402.0" />
+      <Button fx:id="send" layoutX="426.0" layoutY="602.0" mnemonicParsing="false" onAction="#send" prefHeight="26.0" prefWidth="44.0" text="Send" />
+      <ScrollPane hbarPolicy="ALWAYS" hmax="10.0" layoutY="82.0" prefHeight="513.0" prefWidth="480.0" vbarPolicy="ALWAYS" vmax="10.0">
+         <content>
+            <Pane prefHeight="1036.0" prefWidth="472.0">
+               <children>
+                  <Label layoutX="205.0" layoutY="14.0" prefHeight="17.0" prefWidth="68.0" text="T.4 9:27 AM" />
+                  <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="14.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="E:\chatBox\James.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="60.0" prefHeight="17.0" prefWidth="177.0" style="-fx-background-color: rgb(155,155,255);" text="Êi cho t vay 1 tỷ mua xe được ko" />
+                  <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="14.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="E:\chatBox\James.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="98.0" prefHeight="17.0" prefWidth="192.0" style="-fx-background-color: rgb(155,155,255);" text="Stk :  0359701809, ngân hàng Cake" />
+                  <Label layoutX="340.0" layoutY="145.0" prefHeight="17.0" prefWidth="113.0" style="-fx-background-color: rgb(155,155,255);" text="Ok nhớ trả sớm đấy" textAlignment="RIGHT" />
+                  <ImageView fitHeight="430.0" fitWidth="169.0" layoutX="285.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="E:\chatBox\ck.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="221.0" layoutY="540.0" prefHeight="17.0" prefWidth="47.0" text="3:45 AM" />
+                  <Label layoutX="332.0" layoutY="557.0" prefHeight="17.0" prefWidth="130.0" style="-fx-background-color: rgb(155,155,255);" text="Eei có tiền chưa ông ơi" textAlignment="RIGHT" />
+                  <Label layoutX="414.0" layoutY="599.0" prefHeight="17.0" prefWidth="44.0" style="-fx-background-color: rgb(155,155,255);" text="Alo????" textAlignment="RIGHT" />
+                  <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="14.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="E:\chatBox\James.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="221.0" layoutY="616.0" prefHeight="17.0" prefWidth="47.0" text="6:59 AM" />
+                  <Label layoutX="56.0" layoutY="657.0" prefHeight="17.0" prefWidth="154.0" style="-fx-background-color: rgb(155,155,255);" text="T đi mua đồ ăn sáng đã :))" />
+                  <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="14.0" layoutY="689.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="E:\chatBox\James.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="694.0" prefHeight="17.0" prefWidth="154.0" style="-fx-background-color: rgb(155,155,255);" text="Ăn gì không" />
+                  <Label layoutX="348.0" layoutY="739.0" prefHeight="17.0" prefWidth="114.0" style="-fx-background-color: rgb(155,155,255);" text="Mua bún lòng giúp t" textAlignment="RIGHT" />
+                  <Label layoutX="341.0" layoutY="810.0" prefHeight="17.0" prefWidth="121.0" style="-fx-background-color: rgb(155,155,255);" text="Êi m đâu r sao chưa về" textAlignment="RIGHT" />
+                  <Label layoutX="225.0" layoutY="776.0" prefHeight="17.0" prefWidth="47.0" text="9:58 AM" />
+                  <Label layoutX="423.0" layoutY="757.0" prefHeight="17.0" prefWidth="47.0" text="Đã xem" />
+                  <Label layoutX="416.0" layoutY="830.0" prefHeight="17.0" prefWidth="54.0" text="Đã nhận" />
+                  <Label layoutX="225.0" layoutY="860.0" prefHeight="17.0" prefWidth="47.0" text="4:59 PM" />
+                  <Label layoutX="426.0" layoutY="890.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: rgb(155,155,255);" text="Alooo" textAlignment="RIGHT" />
+                  <Label layoutX="414.0" layoutY="999.0" prefHeight="17.0" prefWidth="54.0" text="Đã nhận" />
+                  <Label layoutX="402.0" layoutY="912.0" prefHeight="17.0" prefWidth="60.0" style="-fx-background-color: rgb(155,155,255);" text="Thật đấy à" textAlignment="RIGHT" />
+                  <Label layoutX="299.0" layoutY="934.0" prefHeight="17.0" prefWidth="163.0" style="-fx-background-color: rgb(155,155,255);" text="Anh em chơi với nhau bao lâu" textAlignment="RIGHT" />
+                  <Label layoutX="314.0" layoutY="956.0" prefHeight="17.0" prefWidth="148.0" style="-fx-background-color: rgb(155,155,255);" text="Hóa ra là anh em cây khế à" textAlignment="RIGHT" />
+                  <Label layoutX="390.0" layoutY="978.0" prefHeight="17.0" prefWidth="71.0" style="-fx-background-color: rgb(155,155,255);" text="Về đây cho t" textAlignment="RIGHT" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="label" text="Label" />
+
+   </children>
+</AnchorPane>
